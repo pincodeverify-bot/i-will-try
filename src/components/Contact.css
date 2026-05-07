@@ -1,0 +1,260 @@
+/* Contact Page Styles */
+.contact-page {
+  background-color: #ffffff;
+}
+
+/* Page Banner */
+.page-banner {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://www.sinteredfilter.net/wp-content/uploads/2025/01/Sintered-Plate-Background-Image.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.breadcrumbs {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs span {
+  margin: 0 5px;
+}
+
+.breadcrumbs span:last-child {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Contact Container */
+.contact-container {
+  padding: 80px 20px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-title {
+  color: #1a1a3a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.contact-desc {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #A83232;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.icon-wrapper {
+  width: 24px;
+  height: 24px;
+  color: #A83232;
+  flex-shrink: 0;
+}
+
+.contact-details a {
+  color: #A83232;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+}
+
+.contact-form-card h2 {
+  color: #1a1a3a;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #A83232;
+}
+
+/* File Upload */
+.file-upload-group {
+  margin-bottom: 20px;
+}
+
+.file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.file-btn {
+  padding: 6px 12px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.file-text {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Turnstile Mockup */
+.turnstile-mockup {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fcfcfc;
+  height: 60px;
+}
+
+.turnstile-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-top-color: #A83232;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.turnstile-right {
+  text-align: right;
+}
+
+.turnstile-right img {
+  height: 16px;
+  margin-bottom: 2px;
+}
+
+.turnstile-links {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #A83232;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.send-btn:hover {
+  background-color: #8a2929;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact-info, .contact-form-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-form-card {
+    padding: 30px 20px;
+  }
+}

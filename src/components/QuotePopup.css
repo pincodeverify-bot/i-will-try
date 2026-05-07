@@ -1,0 +1,133 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.popup-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: 1px solid #A83232;
+  color: #A83232;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.popup-close:hover {
+  background: #A83232;
+  color: white;
+}
+
+.popup-title {
+  color: #1a1a3a;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"],
+.popup-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.popup-form input:focus,
+.popup-form textarea:focus {
+  outline: none;
+  border-color: #A83232;
+}
+
+.file-upload {
+  margin-bottom: 5px;
+}
+
+.file-upload input[type="file"] {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.file-upload input[type="file"]::file-selector-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.popup-submit {
+  background-color: #A83232;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.popup-submit:hover {
+  background-color: #8c2929;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
